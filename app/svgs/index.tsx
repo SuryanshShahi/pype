@@ -52,8 +52,8 @@ export const SvgUser = (props: SVGProps<SVGSVGElement>) => (
       fill="#7952DF"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M19 14C19.5523 14 20 14.4477 20 15V17H22C22.5523 17 23 17.4477 23 18C23 18.5523 22.5523 19 22 19H20V21C20 21.5523 19.5523 22 19 22C18.4477 22 18 21.5523 18 21V19H16C15.4477 19 15 18.5523 15 18C15 17.4477 15.4477 17 16 17H18V15C18 14.4477 18.4477 14 19 14Z"
       fill="#7952DF"
       fill-opacity="0.5"
@@ -73,9 +73,9 @@ export const SvgGuests = (props: SVGProps<SVGSVGElement>) => (
     <path
       d="M35 32.4996H35.7143C36.2403 32.4996 36.6667 32.0732 36.6667 31.5472C36.6667 29.4507 35.5377 27.6179 33.8545 26.6237M31.7519 8.2192C33.1993 9.0952 34.1667 10.6845 34.1667 12.4998C34.1667 14.3151 33.1993 15.9045 31.7519 16.7805M6.15386 26.6188C4.46607 27.6119 3.33333 29.4473 3.33333 31.5472C3.33333 32.0732 3.75972 32.4996 4.28571 32.4996H4.99999M8.25564 8.21463C6.80408 9.08967 5.83333 10.6814 5.83333 12.4998C5.83333 14.3143 6.79987 15.9031 8.2462 16.7793M12.8571 33.3334H27.1429C27.8003 33.3334 28.3333 32.8004 28.3333 32.1429C28.3333 28.198 25.1354 25 21.1905 25H18.8095C14.8646 25 11.6667 28.198 11.6667 32.1429C11.6667 32.8004 12.1997 33.3334 12.8571 33.3334ZM25.8333 12.4998C25.8333 15.7215 23.2217 18.3332 20 18.3332C16.7783 18.3332 14.1667 15.7215 14.1667 12.4998C14.1667 9.27818 16.7783 6.6665 20 6.6665C23.2217 6.6665 25.8333 9.27818 25.8333 12.4998Z"
       stroke="#FF6B6B"
-      stroke-width="3.33333"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="3.33333"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
@@ -92,9 +92,9 @@ export const SvgChat = (props: SVGProps<SVGSVGElement>) => (
     <path
       d="M27.1268 8.39654C26.8091 7.99579 26.4651 7.60908 26.0948 7.23874C20.8878 2.03175 12.4456 2.03175 7.23859 7.23874C2.94033 11.537 2.19019 18.0398 4.98817 23.1075L3.96828 27.3555C3.67775 28.5656 4.76786 29.6558 5.97798 29.3652L8.58456 28.7394M33.4937 18.1732C29.263 13.9425 22.4037 13.9425 18.173 18.1732C13.9423 22.4039 13.9423 29.2631 18.173 33.4938C21.6654 36.9862 26.9489 37.5956 31.0664 35.3223L35.3444 36.3494C35.9494 36.4946 36.4945 35.9496 36.3492 35.3445L35.3221 31.0665C37.5955 26.949 36.986 21.6655 33.4937 18.1732Z"
       stroke="#FF6B6B"
-      stroke-width="3.33333"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="3.33333"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
@@ -110,9 +110,9 @@ export const SvgClock = (props: SVGProps<SVGSVGElement>) => (
     <path
       d="M37.8333 22.5L34.5009 19.1667L31.1666 22.5M35 20C35 28.2843 28.2843 35 20 35C11.7157 35 5 28.2843 5 20C5 11.7157 11.7157 5 20 5C25.5032 5 30.3142 7.96356 32.9242 12.3818M20 11.6667V20L25 23.3333"
       stroke="#FF6B6B"
-      stroke-width="3.33333"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="3.33333"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
@@ -128,9 +128,9 @@ export const SvgUpTime = (props: SVGProps<SVGSVGElement>) => (
     <path
       d="M26.6667 20.0002L20 13.3335M20 13.3335L13.3334 20.0002M20 13.3335V28.6668C20 30.9847 20 32.1436 20.9176 33.4412C21.5272 34.3033 23.2824 35.3674 24.3287 35.5091C25.9036 35.7225 26.5016 35.4105 27.6977 34.7866C33.0278 32.0061 36.6667 26.4281 36.6667 20.0002C36.6667 10.7954 29.2048 3.3335 20 3.3335C10.7953 3.3335 3.33337 10.7954 3.33337 20.0002C3.33337 26.1692 6.68503 31.5554 11.6667 34.4371"
       stroke="#FF6B6B"
-      stroke-width="3.33333"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="3.33333"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
@@ -151,5 +151,36 @@ export const SvgArrow = (props: SVGProps<SVGSVGElement>) => (
       strokeLinecap="round"
       strokeLinejoin="round"
     />
+  </svg>
+);
+
+export const SvgSaved = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="23"
+    height="23"
+    viewBox="0 0 23 23"
+    fill="none"
+    {...props}
+  >
+    <g clip-path="url(#clip0_164_3645)">
+      <path
+        d="M15.8823 6.54414L17.5037 18.0976L12.0889 15.4915L7.60072 19.4874L5.97931 7.93392C5.85645 7.05844 6.0864 6.17002 6.61857 5.46409C7.15075 4.75815 7.94156 4.29254 8.81704 4.16968L12.118 3.70642C12.9935 3.58355 13.8819 3.8135 14.5879 4.34568C15.2938 4.87786 15.7594 5.66867 15.8823 6.54414Z"
+        stroke="#1E0A52"
+        strokeWidth="1.4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_164_3645">
+        <rect
+          width="20"
+          height="20"
+          fill="white"
+          transform="translate(0.217102 2.85205) rotate(-7.98869)"
+        />
+      </clipPath>
+    </defs>
   </svg>
 );

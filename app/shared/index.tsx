@@ -6,7 +6,7 @@ const Divider = ({
   variant = "tertiary",
 }: {
   className?: string;
-  variant?: "secondary" | "tertiary" | "primary" | "brand";
+  variant?: "secondary" | "tertiary" | "primary" | "brand" | "deep-violet";
 }) => {
   return (
     <div

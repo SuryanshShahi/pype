@@ -1,11 +1,10 @@
-import { tw } from "@/tailwind.config";
+"use client";
 import clsx from "clsx";
 import { Fragment, useState } from "react";
-import Text from "../Text";
+import { FiMinus, FiPlus } from "react-icons/fi";
 import Divider from "..";
 import Heading from "../heading";
-import { SvgArrow } from "@/app/svgs";
-import { FiMinus, FiPlus } from "react-icons/fi";
+import Text from "../Text";
 
 interface IAccordion {
   data: {
@@ -45,7 +44,7 @@ const Accordion = ({ data, wrapperClass, styleTitle }: IAccordion) => {
         styleTitle={styleTitle}
         className={wrapperClass}
       />
-      {index !== data?.length - 1 && <Divider variant="secondary" />}
+      {/* {index !== data?.length - 1 && <Divider variant="secondary" />} */}
     </Fragment>
   ));
 };

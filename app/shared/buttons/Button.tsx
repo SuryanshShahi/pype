@@ -90,7 +90,7 @@ const Button = ({
   return (
     <button
       className={clsx(
-        "w-max h-max flex items-center prevent-select justify-center rounded-lg cursor-pointer duration-300 font-semibold relative",
+        "w-max h-max flex items-center prevent-select justify-center rounded-lg cursor-pointer duration-300 font-medium relative",
         variantClasses[variant],
         sizeClasses[size],
         {

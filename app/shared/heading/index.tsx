@@ -14,7 +14,7 @@ const Heading = ({
   className,
   as: Component = "h1",
   type = "semibold",
-  variant = "primary",
+  variant = "deep-violet",
   ...props
 }: HeadingProps) => {
   return (

@@ -15,7 +15,7 @@ const Text = ({
   className,
   as: Component = "div",
   size = "base",
-  variant = "primary",
+  variant = "twilight-blue",
   type = "normal",
   ...props
 }: TextProps) => {

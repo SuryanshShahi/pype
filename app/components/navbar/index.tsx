@@ -40,11 +40,7 @@ const Navbar = () => {
       <div className="bg-header-gradient h-screen absolute inset-0 -z-10" />
       <div className="sticky z-20 px-5 my-6" id="navbar">
         <div
-          className={`flex items-center relative z-10 justify-between bg-white p-4 rounded-3xl ${
-            pathname?.includes("/products")
-              ? "container sm:px-5 mx-auto"
-              : "container-sm"
-          }`}
+          className={`flex items-center relative z-10 justify-between bg-white p-4 rounded-3xl container sm:px-5 mx-auto`}
         >
           <div className="flex items-center gap-x-2">
             <Img
@@ -83,18 +79,18 @@ const Navbar = () => {
               <Button
                 btnName="Get Started Free"
                 onClick={() => {}}
-                className="bg-btn-primary !rounded-2xl"
+                className="bg-btn-primary !rounded-2xl sm:block hidden"
               />
               <Button
                 btnName="Sign In"
                 onClick={() => {}}
                 variant="secondary"
-                className="!bg-violet-50 !rounded-2xl !border-violet-200"
-                styleBtnName="!text-violet-900 !font-medium"
+                className="!bg-violet-50 !rounded-2xl !border-violet-200 sm:block hidden"
+                styleBtnName="!text-violet-900"
               />
 
               <GiHamburgerMenu
-                className="sm:hidden"
+                className="md:hidden"
                 size={24}
                 onClick={() =>
                   setIsActive(isActive === "SIDEBAR" ? "" : "SIDEBAR")

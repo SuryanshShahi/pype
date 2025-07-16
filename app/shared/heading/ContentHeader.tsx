@@ -21,17 +21,12 @@ const ContentHeader = ({
     <div className={clsx("flex flex-col items-center gap-y-6", className)}>
       <Chip>{sectionTitle}</Chip>
       <Heading
-        variant="deep-violet"
         type="medium"
-        className={clsx("text-[56px] leading-[67px]", styleTitle)}
+        className={clsx("md:text-[56px] text-[40px] md:leading-[67px]", styleTitle)}
       >
         {title}
       </Heading>
-      <Text
-        size="lg"
-        type="light"
-        className="text-deep-violet/60 max-w-[800px] text-center"
-      >
+      <Text size="lg" type="light" className="max-w-[800px] text-center">
         {description}
       </Text>
     </div>

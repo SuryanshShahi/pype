@@ -33,13 +33,14 @@ const config: Config = {
         slideLeft: "slideLeft 0.3s ease-out",
         bottom: "bottom 0.5s",
       },
-      colors: colors,
+      colors: { ...colors, "twilight-blue": "#5F5F86" },
       fill: {
         disabled: colors.gray["400"],
       },
       textColor: {
         primary: colors.gray["900"],
         secondary: colors.gray["600"],
+        "twilight-blue": "#5F5F86",
         "deep-violet": "#1E0A52",
         "secondary-hover": colors.gray["800"],
         tertiary: colors.gray["500"],
@@ -90,6 +91,7 @@ const config: Config = {
       backgroundColor: {
         primary: "#FFFFFF",
         bgColor: "#f3f4ff",
+        "deep-violet": "#1E0A52",
         "primary-hover": colors.gray["50"],
         "primary-solid": colors.gray["950"],
         secondary: colors.gray["25"],
@@ -142,8 +144,7 @@ const config: Config = {
         xl: "0px 8px 8px -4px #10182808, 0px 20px 24px -4px #10182814",
         "2xl": "0px 24px 48px -12px #1018282E",
         "3xl": "0px 32px 64px -12px #10182824",
-        top: "0px -4px 10px 0px rgba(102, 102, 102, 0.10)",
-        bottom: "0px 4px 10px 0px rgba(102, 102, 102, 0.10)",
+        card: "-10px 30px 70px 0px rgba(30, 10, 82, 0.08)",
       },
       fontFamily: {
         sora: ["var(--font-inter)"],

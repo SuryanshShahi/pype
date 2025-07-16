@@ -5,7 +5,6 @@ import ListItem from "@/app/shared/ListItem";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { SlBag } from "react-icons/sl";
 
 const Navbar = () => {
   const router = useRouter();
@@ -38,10 +37,8 @@ const Navbar = () => {
   return (
     <>
       <div className="bg-header-gradient h-screen absolute inset-0 -z-10" />
-      <div className="sticky z-20 px-5 my-6" id="navbar">
-        <div
-          className={`flex items-center relative z-10 justify-between bg-white p-4 rounded-3xl container sm:px-5 mx-auto`}
-        >
+      <div className="sticky z-20 p-5 top-0" id="navbar">
+        <div className="flex items-center relative z-10 justify-between bg-white p-4 rounded-3xl container sm:px-5 mx-auto shadow-card">
           <div className="flex items-center gap-x-2">
             <Img
               alt="logo"
@@ -52,14 +49,7 @@ const Navbar = () => {
               role="button"
               onClick={() => router.push("/")}
             />
-            <Heading
-              as="h1"
-              type="black"
-              variant="primary"
-              className="text-[32px]"
-            >
-              Pype
-            </Heading>
+            <Heading className="text-[32px]">Pype</Heading>
           </div>
           <div className="flex gap-x-8 items-center">
             <ul className="lg:flex hidden w-fit gap-x-8">
@@ -75,17 +65,17 @@ const Navbar = () => {
                 />
               ))}
             </ul>
-            <div className="flex items-center gap-x-6">
+            <div className="flex items-center gap-x-3">
               <Button
                 btnName="Get Started Free"
                 onClick={() => {}}
-                className="bg-btn-primary !rounded-2xl sm:block hidden"
+                className="bg-btn-primary !rounded-2xl sm:block hidden !px-6 !py-[14px]"
               />
               <Button
                 btnName="Sign In"
                 onClick={() => {}}
                 variant="secondary"
-                className="!bg-violet-50 !rounded-2xl !border-violet-200 sm:block hidden"
+                className="!bg-violet-50 !rounded-2xl !border-violet-200 sm:block hidden !px-6 !py-[14px]"
                 styleBtnName="!text-violet-900"
               />
 
@@ -106,15 +96,18 @@ const Navbar = () => {
           id="sideBar"
         >
           <div className="flex justify-between items-center">
-            <Img
-              alt=""
-              src="/images/logo.png"
-              isLocal
-              height={20}
-              width={202.21}
-              role="button"
-              onClick={() => router.push("/")}
-            />
+            <div className="flex items-center gap-x-2">
+              <Img
+                alt="logo"
+                src="/images/logo.png"
+                isLocal
+                height={36}
+                width={22}
+                role="button"
+                onClick={() => router.push("/")}
+              />
+              <Heading className="text-[32px]">Pype</Heading>
+            </div>
             <div
               className="cursor-pointer text-4xl p-3"
               onClick={() => setIsActive("")}
@@ -122,21 +115,16 @@ const Navbar = () => {
               &times;
             </div>
           </div>
-          <div className={`space-y-5 font-extrabold mr-5`}>
+          <div className={`space-y-5 mr-5`}>
             {routes?.map((item, idx) => (
-              <div
+              <ListItem
                 key={idx}
-                className={`cursor-pointer animate-accordion ${
-                  pathname?.toLowerCase().includes(item?.key?.toLowerCase()) &&
-                  "text-primary2"
-                }`}
-                onClick={() => {
-                  router.push(item.path);
-                  setIsActive("");
-                }}
-              >
-                {item?.name}
-              </div>
+                name={item?.name}
+                isSelected={pathname
+                  ?.toLowerCase()
+                  .includes(item?.key?.toLowerCase())}
+                activeColor="text-deep-violet font-medium"
+              />
             ))}
           </div>
         </div>

@@ -1,8 +1,10 @@
 import Button from "@/app/shared/buttons/Button";
+import CardWrapper from "@/app/shared/CardWrapper";
 import Heading from "@/app/shared/heading";
 import Img from "@/app/shared/Img";
 import Text from "@/app/shared/Text";
 import { BsStars } from "react-icons/bs";
+import { IoIosTrendingUp } from "react-icons/io";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 const HeroSection = () => {
@@ -19,7 +21,10 @@ const HeroSection = () => {
             businesses rely on for excellence.
           </Text>
         </div>
-        <Heading type="medium" className="md:text-[64px] text-[40px] md:leading-[76px] leading-[50px]">
+        <Heading
+          type="medium"
+          className="md:text-[64px] text-[40px] md:leading-[76px] leading-[50px]"
+        >
           Next-Gen Voice AI Redefining Customer Communication
         </Heading>
         <Text size="lg" variant="deep-violet" type="light">
@@ -46,7 +51,7 @@ const HeroSection = () => {
           />
         </div>
       </div>
-      <div className="flex items-center justify-center gap-x-4">
+      <div className="flex items-center justify-center gap-x-4 relative max-w-[600px] w-full mx-auto">
         <Img
           alt="logo"
           src="/images/heroImage.png"
@@ -54,6 +59,37 @@ const HeroSection = () => {
           height={600}
           width={350}
         />
+        <CardWrapper className="!py-3 absolute left-[11%] top-[30%]">
+          <Heading variant="twilight-blue">Engagement</Heading>
+          <Text
+            type="medium"
+            size="2xl"
+            className="flex items-center w-max gap-x-2 !text-brand-500"
+          >
+            <IoIosTrendingUp size={24} className="ml-auto" />
+            10X
+          </Text>
+        </CardWrapper>
+        <CardWrapper className="!py-3 absolute right-2 top-[60%]">
+          <Heading variant="twilight-blue" className="text-nowrap">
+            Lead Qualification
+          </Heading>
+          <Text
+            type="medium"
+            size="2xl"
+            className="flex items-center w-max gap-x-2 !text-brand-500"
+          >
+            <IoIosTrendingUp size={24} className="ml-auto" />
+            5X Faster
+          </Text>
+          <Img
+            src="/images/users.png"
+            alt="logo"
+            isLocal
+            height={30}
+            width={150}
+          />
+        </CardWrapper>
       </div>
     </div>
   );

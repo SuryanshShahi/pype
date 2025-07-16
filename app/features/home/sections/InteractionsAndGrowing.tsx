@@ -6,15 +6,20 @@ import { SvgChat, SvgClock, SvgGuests, SvgUpTime } from "@/app/svgs";
 
 const InteractionsAndGrowing = () => {
   return (
-    <div className="bg-btn-primary rounded-[60px] p-16 space-y-6 mx-5">
+    <div className="bg-btn-primary md:rounded-[60px] rounded-[32px] md:p-16 p-10 space-y-6 mx-5">
       <div className="">
         <ContentHeader
           title="Numbers Behind the Voices:"
           sectionTitle="Pype AI By the Numbers"
-          className="!items-start"
-          styleTitle="!text-white leading-12"
+          description="Powering 1 million+ interactions and growing."
+          className="md:!items-start"
+          styleTitle="md:!text-start !text-white leading-12"
+          styleDescription="md:hidden !text-[40px] !text-white leading-[50px]"
         />
-        <Text type="light" className="!text-white text-[40px] -mt-8">
+        <Text
+          type="light"
+          className="!text-white text-[40px] leading-[50px] -mt-8 md:block hidden"
+        >
           Powering 1 million+ interactions and growing.
         </Text>
       </div>

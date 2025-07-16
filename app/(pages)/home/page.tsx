@@ -1,4 +1,4 @@
-import PageWrapper from "@/app/components/pageWrapper/PageWrapper";
+import PageWrapper from "@/app/components/pageWrapper";
 import Home from "@/app/features/home";
 
 const HomePage = () => {

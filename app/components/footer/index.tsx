@@ -36,7 +36,7 @@ const Footer = () => {
     "I'm a candidate",
   ];
   return (
-    <div className="bg-header-gradient py-16 px-5 md:px-20 gap-20">
+    <div className="bg-header-gradient py-16 px-5 md:px-20 gap-20 mt-16">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
         <div className="space-y-3">
           <div className="flex items-center gap-x-2">

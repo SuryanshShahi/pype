@@ -9,10 +9,13 @@ const Integrations = () => {
       <div className="grid md:grid-cols-2 grid-cols-1 items-center md:gap-10">
         <ContentHeader
           title="Integrates with  30+ tools in an instant"
+          description="Seamlessly connect Pype AI with over 20 tools and apps to streamline workflows and enhance customer communication"
           sectionTitle="Integrations"
-          className="!items-start"
+          className="md:!items-start"
+          styleTitle="md:!text-start"
+          styleDescription="md:hidden"
         />
-        <Text size="lg" type="light" className="max-w-[800px]">
+        <Text size="lg" type="light" className="max-w-[800px] md:block hidden">
           Seamlessly connect Pype AI with over 20 tools and apps to streamline
           workflows and enhance customer communication
         </Text>
@@ -23,7 +26,7 @@ const Integrations = () => {
         isLocal
         height={450}
         width={1170}
-        className="h-[450px] object-cover"
+        className="md:h-[450px] aspect-video md:object-cover"
       />
     </div>
   );

@@ -13,34 +13,37 @@ import { LuClock3 } from "react-icons/lu";
 
 const ReliableAndScalable = () => {
   return (
-    <div className="bg-header-gradient space-y-6 mx-5">
-      <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-10">
+    <div className="space-y-6 mx-5 relative">
+      <div className="grid md:grid-cols-2 grid-cols-1 items-center sm:gap-10 gap-5">
         <ContentHeader
           title="AI agents you can trust. Deploy with confidence."
           sectionTitle="Reliable and Scalable"
           className="!items-start"
+          styleTitle="!text-left"
         />
         <div></div>
-        <div className="p-10 rounded-[42px] bg-header-gradient space-y-6">
-          <Text size="xl" type="light" variant="deep-violet">
-            01
-          </Text>
-          <div className="grid md:grid-cols-2 grid-cols-1 items-end gap-4">
-            <Heading className="text-[32px] leading-8" type="medium">
-              Scheduled outreach made simple
-            </Heading>
-            <Text type="light">
-              Plan follow-ups, product launches, and reminders without writing a
-              single prompt.
+        <div className="md:p-10 p-4 rounded-[42px] bg-header-gradient space-y-6 shadow-card h-full">
+          <div className="space-y-6 md:p-0 p-4">
+            <Text size="xl" type="light" variant="deep-violet">
+              01
             </Text>
+            <div className="grid md:grid-cols-2 grid-cols-1 items-end gap-4">
+              <Heading className="text-[32px] leading-8" type="medium">
+                Scheduled outreach made simple
+              </Heading>
+              <Text type="light">
+                Plan follow-ups, product launches, and reminders without writing
+                a single prompt.
+              </Text>
+            </div>
           </div>
           <Divider />
-          <CardWrapper className="!rounded-[32px] !p-8 space-y-14">
+          <CardWrapper className="!rounded-[32px] md:!p-8 !p-6 space-y-14">
             <div className="border-2 border-dashed border-twilight-blue/20 rounded-[32px]">
               <div className="space-y-4 -rotate-[8deg] bg-white shadow-card rounded-[32px] p-6 -mt-5 w-[90%]">
                 <div className="flex items-center justify-between gap-x-4">
                   <div className="flex items-center gap-x-4">
-                    <div className="h-14 w-14 rounded-full bg-orange-500" />
+                    <div className="h-14 w-14 rounded-full bg-brand-500" />
                     <Heading type="medium" className="text-[24px]">
                       John Doe
                     </Heading>
@@ -103,8 +106,8 @@ const ReliableAndScalable = () => {
             </div>
           </CardWrapper>
         </div>
-        <div className="p-4 rounded-[42px] space-y-6 bg-white">
-          <div className="space-y-6 p-8">
+        <div className="p-4 rounded-[42px] space-y-6 bg-white shadow-card h-full">
+          <div className="space-y-6 md:p-8 p-4">
             <Text size="xl" type="light" variant="deep-violet">
               02
             </Text>
@@ -143,6 +146,8 @@ const ReliableAndScalable = () => {
           </CardWrapper>
         </div>
       </div>
+      <div className="bg-[#F1F2FF] h-[770px] w-[770px] rounded-full blur[132px] absolute top-1/4 right-20 -z-10 blur-[132px]" />
+      <div className="bg-[#F1F2FF] h-[770px] w-[770px] rounded-full blur[132px] absolute top-1/2 left-0 -z-10 blur-[132px]" />
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
         {[
           {
@@ -187,14 +192,17 @@ const ReliableAndScalable = () => {
               },
             ],
             children: (
-              <Img
-                src="/images/reliable4.png"
-                alt="reliable3"
-                width={366}
-                height={317}
-                isLocal
-                className="w-full h-full -ml-1"
-              />
+              <div className="h-[317px] mt-auto">
+                <Img
+                  src="/images/reliable4.png"
+                  alt="reliable3"
+                  width={366}
+                  height={317}
+                  isLocal
+                  className="w-full -ml-1"
+                />
+                <div className="h-2 bg-[#46219c] z-10 -mt-[7.5px] relative" />
+              </div>
             ),
           },
           {
@@ -213,74 +221,82 @@ const ReliableAndScalable = () => {
             ],
             children: (
               <Img
-                src="/images/reliable6.png"
+                src="/images/reliable5.png"
                 alt="reliable3"
                 width={366}
                 height={333}
                 isLocal
-                className="w-full h-full object-cover"
+                className="w-full object-cover mt-auto"
               />
             ),
           },
         ].map((item, idx) => (
           <div
             className={clsx(
-              "space-y-8 bg-white rounded-[42px] py-6 px-4 h-max",
+              "gap-y-8 bg-white rounded-[42px] py-6 px-4 shadow-card h-full flex flex-col",
               item.className
             )}
             key={idx}
           >
-            <div className="flex gap-x-4 p-4">
+            <div className="space-y-8">
+              <div className="flex gap-x-4 p-2">
+                <div
+                  className={clsx(
+                    "h-11 min-w-11 rounded-full border border-secondary flex items-center justify-center font-medium",
+                    idx === 1 && "!text-white"
+                  )}
+                >
+                  05
+                </div>
+                <div className={clsx("space-y-4")}>
+                  <Heading
+                    className={clsx(
+                      "text-[32px] leading-8",
+                      idx === 1 && "!text-white/80"
+                    )}
+                    type="medium"
+                  >
+                    {item.title}
+                  </Heading>
+                  <Text
+                    type="light"
+                    className={clsx(idx === 1 && "!text-white/60")}
+                  >
+                    {item.description}
+                  </Text>
+                </div>
+              </div>
               <div
                 className={clsx(
-                  "h-11 min-w-11 rounded-full border border-secondary flex items-center justify-center font-medium",
-                  idx === 1 && "!text-white"
+                  "flex md:flex-nowrap flex-wrap justify-between px-4",
+                  idx === 0 && "gap-x-4"
                 )}
               >
-                05
-              </div>
-              <div className="space-y-4">
-                <Heading
-                  className={clsx(
-                    "text-[32px] leading-8",
-                    idx === 1 && "!text-white/80"
-                  )}
-                  type="medium"
-                >
-                  {item.title}
-                </Heading>
-                <Text
-                  type="light"
-                  className={clsx(idx === 1 && "!text-white/60")}
-                >
-                  {item.description}
-                </Text>
-              </div>
-            </div>
-            <div className="flex flex-wrap gap-x-10 px-4">
-              {item.details.map((item, idx) => (
-                <div className="flex gap-x-3" key={idx}>
-                  <div className="text-deep-violet mt-[6px] h-[14px] min-w-[14px] rounded-full bg-twilight-blue flex items-center justify-center">
-                    <Text variant="white" className="-mt-[3px]">
-                      •
-                    </Text>
-                  </div>
-                  <div className="space-y-3">
-                    <Heading className={clsx(idx === 1 && "!text-white/80")}>
-                      {item.title}
-                    </Heading>
-                    {item?.description && (
-                      <Text
-                        type="light"
-                        className={clsx(idx === 1 && "!text-white/60")}
-                      >
-                        {item?.description}
+                {item.details.map((item, idx1) => (
+                  <div className="flex gap-x-3" key={idx1}>
+                    <div className="text-deep-violet mt-[6px] h-[14px] min-w-[14px] rounded-full bg-twilight-blue flex items-center justify-center">
+                      <Text variant="white" className="-mt-[3px]">
+                        •
                       </Text>
-                    )}
+                    </div>
+                    <div className={"space-y-3"}>
+                      <Heading className={clsx(idx === 1 && "!text-white/80")}>
+                        {item.title}
+                      </Heading>
+                      {item?.description && (
+                        <Text
+                          type="light"
+                          className={clsx(idx === 1 && "!text-white/60")}
+                        >
+                          {item?.description}
+                        </Text>
+                      )}
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
+
             {item.children}
           </div>
         ))}

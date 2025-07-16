@@ -6,6 +6,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "../footer";
 import Navbar from "../navbar";
+import clsx from "clsx";
 
 interface IPageWraps {
   wrapperClass?: string;
@@ -40,7 +41,9 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
         <ToastContainer stacked />
         <div className="animate-bottom">
           <Navbar />
-          <div className={wrapperClass}>{children}</div>
+          <div className={clsx(wrapperClass, "overflow-x-hidden")}>
+            {children}
+          </div>
           {isActive && (
             <div
               className="z-10 w-12 h-8 hover:h-10 duration-300 bottom-0 right-10 rounded-t-md fixed cursor-pointer bg-deep-violet flex items-center justify-center"

@@ -78,7 +78,7 @@ const Testimonials = () => {
                           size={20}
                           className={clsx(
                             item.rating > idx
-                              ? "text-orange-500"
+                              ? "text-brand-500"
                               : "text-gray-200"
                           )}
                           key={idx}

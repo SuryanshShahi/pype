@@ -10,7 +10,44 @@
 body {
   font-family: general-sans;
 }
+* {
+  scroll-behavior: smooth;
+}
+#navbar.active {
+  animation: fadeNav 0.7s linear forwards;
+}
+@keyframes fadeNav {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+#sideBar {
+  animation: sideNav 0.4s linear forwards;
+  z-index: 999;
+}
 :root {
   --brand-50: #fff5f5;
   --brand-100: #ffe5e5;

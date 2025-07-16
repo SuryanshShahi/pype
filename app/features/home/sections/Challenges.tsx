@@ -108,11 +108,11 @@ const Challenges = () => {
         >
           <div
             className={clsx(
-              "p-8 rounded-[32px]",
+              "md:p-8 p-6 rounded-[32px]",
               idx % 2 === 0 ? "bg-btn-primary" : "bg-violet-50"
             )}
           >
-            <CardWrapper className="rounded-3xl space-y-8 p-8">
+            <CardWrapper className="rounded-3xl space-y-8 md:p-8 p-6">
               <Img
                 alt="logo"
                 src={item.image}

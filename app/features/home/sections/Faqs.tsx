@@ -11,10 +11,11 @@ const Faqs = () => {
         <ContentHeader
           title="Frequently Asked Question"
           sectionTitle="Quick Answers"
-          className="!items-start"
+          className="md:!items-start"
+          styleTitle="md:!text-start"
         />
         <div className="space-y-10">
-          <Text size="lg" type="light" className="max-w-[800px]">
+          <Text size="lg" type="light" className="max-w-[800px] md:text-start text-center">
             Got questions? Find answers about Pype AI’s voice agents, features,
             and how we transform customer communication.
           </Text>
@@ -22,7 +23,7 @@ const Faqs = () => {
             btnName="Contact Us"
             onClick={() => {}}
             icon={<MdKeyboardArrowRight size={24} className="text-white" />}
-            className="bg-btn-primary !rounded-2xl !py-4 !px-6"
+            className="bg-btn-primary !rounded-2xl !py-4 !px-6 md:mx-0 mx-auto"
             styleBtnName="!font-medium"
           />
         </div>

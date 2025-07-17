@@ -3,7 +3,7 @@ import Heading from "@/app/shared/heading";
 import ContentHeader from "@/app/shared/heading/ContentHeader";
 import Text from "@/app/shared/Text";
 import { SvgChat, SvgClock, SvgGuests, SvgUpTime } from "@/app/svgs";
-import { useState, useRef, useEffect, forwardRef } from "react";
+import { forwardRef } from "react";
 import CountUp from "react-countup";
 
 const InteractionsAndGrowing = forwardRef<HTMLDivElement, { visible: boolean }>(
@@ -83,5 +83,5 @@ const InteractionsAndGrowing = forwardRef<HTMLDivElement, { visible: boolean }>(
     );
   }
 );
-
+InteractionsAndGrowing.displayName = "InteractionsAndGrowing";
 export default InteractionsAndGrowing;

@@ -65,7 +65,7 @@ const Footer = () => {
               elevate experiences with human-like conversations.
             </Text>
             <div className="space-y-4">
-              <div className="relative w-[70%] shadow-card rounded-full">
+              <div className="relative lg:w-[70%] sm:w-full w-[90%] md:mx-0 mx-auto shadow-card rounded-full">
                 <input
                   placeholder="Enter your email"
                   className="bg-white rounded-full px-6 py-4 w-full outline-none pr-32"

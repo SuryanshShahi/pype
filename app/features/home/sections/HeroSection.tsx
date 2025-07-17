@@ -9,7 +9,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 const HeroSection = () => {
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 gap-10 px-5">
+    <div className="grid md:grid-cols-2 grid-cols-1 gap-10 px-5 items-center">
       <div className="space-y-6">
         <div className="flex items-center gap-x-3">
           <div className="bg-white h-10 min-w-10 rounded-full flex items-center justify-center">
@@ -51,15 +51,16 @@ const HeroSection = () => {
           />
         </div>
       </div>
-      <div className="flex items-center justify-center gap-x-4 relative max-w-[600px] w-full mx-auto">
+      <div className="flex items-center justify-center gap-x-4 relative max-w-[600px] w-full mx-auto mt-6">
         <Img
           alt="logo"
-          src="/images/heroImage.png"
+          src="/images/heroVideo.gif"
           isLocal
           height={600}
           width={350}
+          className="h-[650px]"
         />
-        <CardWrapper className="!py-3 absolute left-[11%] top-[30%]">
+        <CardWrapper className="!py-3 absolute left-[5%] top-[30%] shadow-card">
           <Heading variant="twilight-blue">Engagement</Heading>
           <Text
             type="medium"
@@ -70,7 +71,7 @@ const HeroSection = () => {
             10X
           </Text>
         </CardWrapper>
-        <CardWrapper className="!py-3 absolute right-2 top-[60%]">
+        <CardWrapper className="!py-3 absolute -right-[4%] top-[60%] shadow-card">
           <Heading variant="twilight-blue" className="text-nowrap">
             Lead Qualification
           </Heading>

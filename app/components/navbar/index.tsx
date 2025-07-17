@@ -92,8 +92,8 @@ const Navbar = () => {
       </div>
       {isActive === "SIDEBAR" && (
         <div
-          className="bg-white h-screen w-full space-y-6 py-2 px-4 fixed top-0"
-          id="sideBar"
+          className="bg-white h-screen w-screen z-50 space-y-6 py-2 px-4 fixed top-0 animate-slideLeft"
+          // id="sideBar"
         >
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-x-2">

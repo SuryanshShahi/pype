@@ -94,11 +94,11 @@ const AccordionItem = ({
         <div>
           {isRichText ? (
             <p
-              className="animate-bottom rce-text"
+              className="animate-slideLeft rce-text"
               dangerouslySetInnerHTML={{ __html: body as string }}
             />
           ) : typeof body === "string" ? (
-            <Text variant="secondary" className="animate-bottom">
+            <Text variant="secondary" className="animate-slideLeft">
               {body}
             </Text>
           ) : (

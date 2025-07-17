@@ -50,17 +50,17 @@ const InteractionForm = () => {
         <div className="space-y-4">
           <input
             type="text"
-            placeholder="Enter your email"
+            placeholder="Your Name"
             className="w-full h-11 rounded-lg border outline-none p-3"
           />
           <input
             type="text"
-            placeholder="Enter your email"
+            placeholder="Your email"
             className="w-full h-11 rounded-lg border outline-none p-3"
           />
           <input
             type="text"
-            placeholder="Enter your email"
+            placeholder="Your phone"
             className="w-full h-11 rounded-lg border outline-none p-3"
           />
           <div className="flex items-center gap-x-2">

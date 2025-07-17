@@ -6,7 +6,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Faqs = () => {
   return (
-    <div className="bg-header-gradient rounded-3xl p-10 space-y-14 mx-5">
+    <div className="bg-header-gradient rounded-3xl md:p-10 p-6 space-y-14 mx-5">
       <div className="grid md:grid-cols-2 grid-cols-1 items-center md:gap-10">
         <ContentHeader
           title="Frequently Asked Question"
@@ -15,7 +15,11 @@ const Faqs = () => {
           styleTitle="md:!text-start"
         />
         <div className="space-y-10">
-          <Text size="lg" type="light" className="max-w-[800px] md:text-start text-center">
+          <Text
+            size="lg"
+            type="light"
+            className="max-w-[800px] md:text-start text-center"
+          >
             Got questions? Find answers about Pype AI’s voice agents, features,
             and how we transform customer communication.
           </Text>
@@ -34,22 +38,18 @@ const Faqs = () => {
             {
               title: "What is Pype AI for customer service?",
               body: "Pype Ai  agents perceive customer intent, take the right action, and adapt over time through real-time interactions. They instantly resolve common issues and escalate complex ones to human agents with full context, boosting resolution rates while enhancing the customer experience.",
-              isOpen: true,
             },
             {
               title: "What is Pype AI for customer service?",
               body: "Pype Ai  agents perceive customer intent, take the right action, and adapt over time through real-time interactions. They instantly resolve common issues and escalate complex ones to human agents with full context, boosting resolution rates while enhancing the customer experience.",
-              isOpen: true,
             },
             {
               title: "What is Pype AI for customer service?",
               body: "Pype Ai  agents perceive customer intent, take the right action, and adapt over time through real-time interactions. They instantly resolve common issues and escalate complex ones to human agents with full context, boosting resolution rates while enhancing the customer experience.",
-              isOpen: true,
             },
             {
               title: "What is Pype AI for customer service?",
               body: "Pype Ai  agents perceive customer intent, take the right action, and adapt over time through real-time interactions. They instantly resolve common issues and escalate complex ones to human agents with full context, boosting resolution rates while enhancing the customer experience.",
-              isOpen: true,
             },
           ]}
           wrapperClass="bg-white rounded-[32px] p-6"

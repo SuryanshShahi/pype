@@ -12,7 +12,7 @@ import Testimonials from "./sections/Testimonials";
 
 const Home = () => {
   return (
-    <div className="space-y-16">
+    <div className="space-y-24">
       <HeroSection />
       <IndustryLeaders />
       <ReliableAndScalable />

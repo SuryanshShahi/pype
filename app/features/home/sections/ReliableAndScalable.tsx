@@ -7,9 +7,6 @@ import Img from "@/app/shared/Img";
 import Text from "@/app/shared/Text";
 import { SvgSaved } from "@/app/svgs";
 import clsx from "clsx";
-import { HiOutlineLocationMarker } from "react-icons/hi";
-import { IoDocumentTextOutline } from "react-icons/io5";
-import { LuClock3 } from "react-icons/lu";
 
 const ReliableAndScalable = () => {
   return (
@@ -32,8 +29,7 @@ const ReliableAndScalable = () => {
                 Scheduled outreach made simple
               </Heading>
               <Text type="light">
-                Plan follow-ups, product launches, and reminders without writing
-                a single prompt.
+                Automated calls triggered by customer events and interactions
               </Text>
             </div>
           </div>
@@ -43,10 +39,22 @@ const ReliableAndScalable = () => {
               <div className="space-y-4 -rotate-[8deg] bg-white shadow-card rounded-[32px] p-6 -mt-5 w-[90%]">
                 <div className="flex items-center justify-between gap-x-4">
                   <div className="flex items-center gap-x-4">
-                    <div className="h-14 w-14 rounded-full bg-brand-500" />
-                    <Heading type="medium" className="text-[24px]">
-                      John Doe
-                    </Heading>
+                    <div className="h-14 w-14 rounded-full bg-brand-500">
+                      <Img
+                        src="/images/circleBlack.png"
+                        alt="reliable1"
+                        width={56}
+                        height={56}
+                        isLocal
+                        className="w-full h-full"
+                      />
+                    </div>
+                    <div>
+                      <Heading type="medium" className="text-[24px]">
+                        Squareyards Leads
+                      </Heading>
+                      <Text type="light">Trigger: Lead registration</Text>
+                    </div>
                   </div>
                   <div className="flex items-center justify-center border border-dashed rounded-full w-14 h-14 rotate-[5deg]">
                     <SvgSaved />
@@ -54,52 +62,57 @@ const ReliableAndScalable = () => {
                 </div>
                 <div className="flex items-center gap-x-2">
                   <Button
-                    btnName="Lorem"
+                    btnName="156 triggers"
                     size="sm"
                     variant="secondary"
-                    className="px-4 py-1 !rounded-full"
+                    className="!px-4 !py-[6px] !rounded-full"
                   />
                   <Button
-                    btnName="Ipsum"
+                    btnName="57%"
                     size="sm"
                     variant="secondary"
-                    className="px-4 py-1 !rounded-full"
+                    className="!px-4 !py-1 !rounded-full !border-success-500"
                   />
                   <Button
-                    btnName="5+"
-                    className="bg-btn-primary px-4 py-1 !rounded-full"
+                    btnName="Active"
+                    className="bg-btn-primary !px-4 !py-[6px] !rounded-full"
                     size="sm"
                   />
                 </div>
               </div>
             </div>
             <Text type="light">
-              In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-              Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
-              Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
-              eleifend
+              Reach customers automatically when they fill a form, miss a call,
+              or complete a key action. Schedule follow-ups, reminders, and
+              campaigns—without lifting a finger.
             </Text>
             <div className="flex items-center justify-between !mt-8">
               {[
                 {
-                  label: "lorem Ipsum",
-                  icon: <IoDocumentTextOutline className="text-deep-violet" />,
+                  label: "Active Sequences: ",
+                  value: "2",
+                  // icon: <IoDocumentTextOutline className="text-deep-violet" />,
                 },
                 {
-                  label: "5 Days left",
-                  icon: <LuClock3 className="text-deep-violet" />,
+                  label: "Total Triggers: ",
+                  value: "359",
+                  // icon: <LuClock3 className="text-deep-violet" />,
                 },
                 {
-                  label: "USA, California",
-                  icon: (
-                    <HiOutlineLocationMarker className="text-deep-violet" />
-                  ),
+                  label: "Avg Success Rate: ",
+                  value: "62%",
+                  // icon: (
+                  //   <HiOutlineLocationMarker className="text-deep-violet" />
+                  // ),
                 },
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-x-2">
-                  {item.icon}
-                  <Text type="medium" size="sm" variant="deep-violet">
+                  {/* {item.icon} */}
+                  <Text type="light" size="sm" variant="deep-violet">
                     {item.label}
+                    <span className="text-deep-violet font-semibold">
+                      {item.value}
+                    </span>
                   </Text>
                 </div>
               ))}
@@ -122,18 +135,40 @@ const ReliableAndScalable = () => {
             </div>
           </div>
           <div className="flex flex-wrap items-center gap-4 justify-center">
-            {["Lorem Ipsum", "Donec sodales", "Lorem Ipsum"].map(
-              (item, idx) => (
-                <Button
-                  key={idx}
-                  btnName={item}
-                  size="sm"
-                  variant="secondary"
-                  styleBtnName="text-twilight-blue"
-                  className="!px-6 py-1 !rounded-full"
-                />
-              )
-            )}
+            {[
+              {
+                label: "Calls Today:",
+                value: "77",
+              },
+              {
+                label: "Active Agents:",
+                value: "2",
+              },
+              {
+                label: "Avg Time:",
+                value: "1:34min",
+              },
+            ].map((item, idx) => (
+              <Button
+                key={idx}
+                btnName={
+                  (
+                    <div className="flex items-center gap-x-2">
+                      <Text type="light" size="sm">
+                        {item.label}
+                      </Text>
+                      <Text type="semibold" size="sm" variant="deep-violet">
+                        {item.value}
+                      </Text>
+                    </div>
+                  ) as any
+                }
+                size="sm"
+                variant="secondary"
+                styleBtnName="text-twilight-blue"
+                className="!px-6 py-1 !rounded-full"
+              />
+            ))}
           </div>
           <CardWrapper className="!rounded-[32px] !p-8 space-y-14 bg-header-gradient">
             <Img
@@ -156,14 +191,12 @@ const ReliableAndScalable = () => {
               "No prompt-writing needed. We train your voice AI directly on your recordings.",
             details: [
               {
-                title: "Nam quam nunc",
-                description:
-                  "No prompt-writing needed. We train your voice AI directly on your recordings.",
+                title: "Upload your past calls — no manual prompt setup",
+                description: "",
               },
               {
-                title: "Nam quam nunc",
-                description:
-                  "No prompt-writing needed. We train your voice AI directly on your recordings.",
+                title: "AI learns tone, flow, & response style automatically",
+                description: "",
               },
             ],
             children: (
@@ -174,7 +207,7 @@ const ReliableAndScalable = () => {
                   width={366}
                   height={320}
                   isLocal
-                  //   className="w-full h-full"
+                  className="w-full"
                 />
               </div>
             ),
@@ -186,9 +219,8 @@ const ReliableAndScalable = () => {
             className: "bg-btn-primary",
             details: [
               {
-                title: "One workflow",
-                description:
-                  "Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend",
+                title: "No-code campaign builder",
+                description: "",
               },
             ],
             children: (
@@ -206,16 +238,16 @@ const ReliableAndScalable = () => {
             ),
           },
           {
-            title: "Whitelabel Calling Numbers",
+            title: "White label Calling Numbers",
             description:
-              "Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend",
+              "Use your brand's own caller ID for every outbound campaign. Increase answer rates and build instant trust.",
             details: [
               {
-                title: "Lorem Ipsum",
+                title: "Branded Caller ID",
                 description: "",
               },
               {
-                title: "Lorem Ipsum",
+                title: "Regional Routing",
                 description: "",
               },
             ],

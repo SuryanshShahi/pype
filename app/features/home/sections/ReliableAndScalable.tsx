@@ -224,7 +224,7 @@ const ReliableAndScalable = () => {
               },
             ],
             children: (
-              <div className="h-[317px] mt-auto">
+              <div className="h-[317px] mt-auto mb-4">
                 <Img
                   src="/images/reliable4.png"
                   alt="reliable3"

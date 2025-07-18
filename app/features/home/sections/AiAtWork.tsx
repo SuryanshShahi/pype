@@ -7,7 +7,16 @@ import clsx from "clsx";
 import React from "react";
 import { FaPlay } from "react-icons/fa";
 import { LuPhoneCall } from "react-icons/lu";
-const RenderBtn = ({ type = "play" }: { type?: "call" | "play" }) => (
+const RenderBtn = ({
+  type = "play",
+  data,
+}: {
+  type?: "call" | "play";
+  data: {
+    title?: string;
+    description: string;
+  };
+}) => (
   <CardWrapper className="flex items-center gap-x-4 bg-white/50 backdrop-blur-[10px] !border-none w-full cursor-pointer">
     <div
       className={clsx(
@@ -22,9 +31,9 @@ const RenderBtn = ({ type = "play" }: { type?: "call" | "play" }) => (
       )}
     </div>
     <div>
-      {type === "call" ? (
+      {data.title && type === "call" ? (
         <Heading variant="black" className="text-lg">
-          Talk To Agent
+          {data.title}
         </Heading>
       ) : (
         <Img
@@ -36,7 +45,7 @@ const RenderBtn = ({ type = "play" }: { type?: "call" | "play" }) => (
         />
       )}
       <Text variant="black" type="light">
-        Clinic Front Desk
+        {data.description}
       </Text>
     </div>
   </CardWrapper>
@@ -63,8 +72,14 @@ const AiAtWork = () => {
             </Text>
           </div>
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-auto -m-3">
-            <RenderBtn type="call" />
-            <RenderBtn />
+            <RenderBtn
+              type="call"
+              data={{
+                title: "Talk To Agent",
+                description: "Clinic Front Desk",
+              }}
+            />
+            <RenderBtn data={{ description: "Listen to Demo" }} />
           </div>
         </div>
         <div className="flex md:flex-col sm:flex-row flex-col justify-between gap-10">
@@ -81,8 +96,14 @@ const AiAtWork = () => {
               </Text>
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-auto -m-3">
-              <RenderBtn type="call" />
-              <RenderBtn />
+              <RenderBtn
+                type="call"
+                data={{
+                  title: "Talk To Agent",
+                  description: "Real Estate Broker",
+                }}
+              />
+              <RenderBtn data={{ description: "Listen to Demo" }} />
             </div>
           </div>
           <div className="flex flex-col relative md:p-10 sm:p-6 p-8 bg-[url('/images/aiAction/action3.png')] rounded-[40px] sm:h-[330px] h-[500px] w-full bg-cover bg-center bg-no-repeat">
@@ -98,8 +119,14 @@ const AiAtWork = () => {
               </Text>
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-auto -m-3">
-              <RenderBtn type="call" />
-              <RenderBtn />
+              <RenderBtn
+                type="call"
+                data={{
+                  title: "Talk To Agent",
+                  description: "Bank Customer Support",
+                }}
+              />
+              <RenderBtn data={{ description: "Listen to Demo" }} />
             </div>
           </div>
         </div>

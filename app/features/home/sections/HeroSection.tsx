@@ -60,7 +60,7 @@ const HeroSection = () => {
           width={350}
           className="h-[650px]"
         />
-        <CardWrapper className="!py-3 absolute left-[5%] top-[30%] shadow-card">
+        <CardWrapper className="!py-3 absolute left-[5%] top-[30%] shadow-card sm:block hidden">
           <Heading variant="twilight-blue">Engagement</Heading>
           <Text
             type="medium"
@@ -71,7 +71,7 @@ const HeroSection = () => {
             10X
           </Text>
         </CardWrapper>
-        <CardWrapper className="!py-3 absolute -right-[4%] top-[60%] shadow-card">
+        <CardWrapper className="!py-3 absolute -right-[4%] top-[60%] shadow-card sm:block hidden">
           <Heading variant="twilight-blue" className="text-nowrap">
             Lead Qualification
           </Heading>

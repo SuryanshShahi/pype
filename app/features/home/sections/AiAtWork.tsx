@@ -8,7 +8,7 @@ import React from "react";
 import { FaPlay } from "react-icons/fa";
 import { LuPhoneCall } from "react-icons/lu";
 const RenderBtn = ({ type = "play" }: { type?: "call" | "play" }) => (
-  <CardWrapper className="flex items-center gap-x-4 bg-white/60 backdrop-blur-[10px] !border-none w-full cursor-pointer">
+  <CardWrapper className="flex items-center gap-x-4 bg-white/50 backdrop-blur-[10px] !border-none w-full cursor-pointer">
     <div
       className={clsx(
         "h-10 w-10 rounded-full flex items-center justify-center",

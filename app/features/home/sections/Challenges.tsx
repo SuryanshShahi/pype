@@ -73,26 +73,26 @@ const Challenges = () => {
         },
       ],
     },
-    {
-      image: "/images/challenges/challenge3.png",
-      value: "85%",
-      imageTitle: "Higher lead recovery rate with instant callbacks",
-      title: "Regional Language Suppport",
-      description:
-        "Pype AI ensures no lead slips through the cracks with instant AI-driven callbacks",
-      details: [
-        {
-          label:
-            "Native Language  voice AI enhances customer trust and improves engagement in Tier 2 & Tier 3 cities",
-          icon: <IoIosCheckmarkCircle size={28} className="text-violet-700" />,
-        },
-        {
-          label:
-            "Perfect accent and cultural understanding builds stronger connections with potential buyers",
-          icon: <IoIosCheckmarkCircle size={28} className="text-violet-700" />,
-        },
-      ],
-    },
+    // {
+    //   image: "/images/challenges/challenge3.png",
+    //   value: "85%",
+    //   imageTitle: "Higher lead recovery rate with instant callbacks",
+    //   title: "Regional Language Suppport",
+    //   description:
+    //     "Pype AI ensures no lead slips through the cracks with instant AI-driven callbacks",
+    //   details: [
+    //     {
+    //       label:
+    //         "Native Language  voice AI enhances customer trust and improves engagement in Tier 2 & Tier 3 cities",
+    //       icon: <IoIosCheckmarkCircle size={28} className="text-violet-700" />,
+    //     },
+    //     {
+    //       label:
+    //         "Perfect accent and cultural understanding builds stronger connections with potential buyers",
+    //       icon: <IoIosCheckmarkCircle size={28} className="text-violet-700" />,
+    //     },
+    //   ],
+    // },
   ];
   return (
     <div className="space-y-20 mx-5">

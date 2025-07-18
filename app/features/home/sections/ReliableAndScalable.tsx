@@ -11,14 +11,14 @@ import clsx from "clsx";
 const ReliableAndScalable = () => {
   return (
     <div className="space-y-6 mx-5 relative">
+      <ContentHeader
+        title="AI agents you can trust."
+        description="Deploy with confidence."
+        styleDescription="md:!text-[56px] !text-[40px] md:!leading-[67px] !leading-[50px] !text-deep-violet !font-medium !-mt-4"
+        sectionTitle="Reliable and Scalable"
+        className="mx-auto !mb-16"
+      />
       <div className="grid md:grid-cols-2 grid-cols-1 items-center sm:gap-10 gap-5">
-        <ContentHeader
-          title="AI agents you can trust. Deploy with confidence."
-          sectionTitle="Reliable and Scalable"
-          className="!items-start"
-          styleTitle="!text-left"
-        />
-        <div></div>
         <div className="md:p-10 p-4 rounded-[42px] bg-header-gradient space-y-6 shadow-card h-full">
           <div className="space-y-6 md:p-0 p-4">
             <Text size="xl" type="light" variant="deep-violet">

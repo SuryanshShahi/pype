@@ -14,7 +14,7 @@ const ReliableAndScalable = () => {
       <ContentHeader
         title="AI agents you can trust."
         description="Deploy with confidence."
-        styleDescription="md:!text-[56px] !text-[40px] md:!leading-[67px] !leading-[50px] !text-deep-violet !font-medium !-mt-4"
+        styleDescription="md:!text-[56px] !text-[40px] md:!leading-[67px] !leading-[50px] !text-deep-violet !font-medium sm:!-mt-4 !-mt-5"
         sectionTitle="Reliable and Scalable"
         className="mx-auto !mb-16"
       />

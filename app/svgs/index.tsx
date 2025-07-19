@@ -184,3 +184,35 @@ export const SvgSaved = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
+
+export const SvgWave = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="998"
+    height="302"
+    viewBox="0 0 998 302"
+    fill="none"
+    {...props}
+  >
+    <path
+      opacity="0.2"
+      d="M5 261.782C70.3333 297.449 205.5 330.482 223.5 177.282C246 -14.2179 458.5 -0.217896 473 146.282C487.5 292.782 681 319.282 734.5 100.782C777.3 -74.0179 922.667 43.2821 990 123.782"
+      stroke="url(#paint0_linear_143_2615)"
+      strokeWidth="20"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear_143_2615"
+        x1="5"
+        y1="294.612"
+        x2="1016.92"
+        y2="220.476"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#CCCCE9" stopOpacity="0.1" />
+        <stop offset="0.5" stopColor="#CCCCE9" />
+        <stop offset="1" stopColor="#CCCCE9" stopOpacity="0.1" />
+      </linearGradient>
+    </defs>
+  </svg>
+);

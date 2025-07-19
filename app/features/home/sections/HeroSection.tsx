@@ -3,6 +3,7 @@ import CardWrapper from "@/app/shared/CardWrapper";
 import Heading from "@/app/shared/heading";
 import Img from "@/app/shared/Img";
 import Text from "@/app/shared/Text";
+import { SvgWave } from "@/app/svgs";
 import { BsStars } from "react-icons/bs";
 import { IoIosTrendingUp } from "react-icons/io";
 import { MdKeyboardArrowRight } from "react-icons/md";
@@ -27,7 +28,7 @@ const HeroSection = () => {
         >
           Next-Gen Voice AI Redefining Customer Communication
         </Heading>
-        <Text size="lg" variant="deep-violet" type="light">
+        <Text size="lg" variant="deep-violet" type="light" className="max-w-[500px]">
           Enterprise-grade AI voice agents that automate calls, streamline
           operations, and elevate customer experiences. Delivering exceptional
           service 24/7.
@@ -50,17 +51,29 @@ const HeroSection = () => {
             styleBtnName="!text-violet-900 !font-medium"
           />
         </div>
+        <div className="flex items-center py-1 pl-1 pr-4 bg-[#F7FEE8] w-max rounded-full gap-x-3 animate-pulse !mt-10">
+          <div className="bg-white py-1 px-4 rounded-full text-sm font-medium text-[#567B24] border border-[#ECFDCD]">
+            <span className="text-[#ACF648] text-xl leading-none blur-[1px]">
+              •{" "}
+            </span>
+            Update
+          </div>
+          <Text type="medium" variant="[#567B24]" size="sm">
+            We Are launching on Salesforce
+          </Text>
+        </div>
       </div>
       <div className="flex items-center justify-center gap-x-4 relative max-w-[600px] w-full mx-auto mt-6">
+        <SvgWave className="absolute top-[20%] -right-16 -right[20%] animate-pulse" />
         <Img
           alt="logo"
           src="/images/heroVideo.gif"
           isLocal
           height={600}
           width={350}
-          className="h-[650px]"
+          className="h-[650px] z-10 animate-bottom"
         />
-        <CardWrapper className="!py-3 absolute left-[5%] top-[30%] shadow-card sm:block hidden">
+        <CardWrapper className="!py-3 absolute left-[5%] top-[15%] shadow-card sm:block hidden z-[11] animate-slide">
           <Heading variant="twilight-blue">Engagement</Heading>
           <Text
             type="medium"
@@ -71,7 +84,7 @@ const HeroSection = () => {
             10X
           </Text>
         </CardWrapper>
-        <CardWrapper className="!py-3 absolute -right-[4%] top-[60%] shadow-card sm:block hidden">
+        <CardWrapper className="!py-3 absolute -right-[4%] top-[60%] shadow-card sm:block hidden z-[11] animate-slideLeft">
           <Heading variant="twilight-blue" className="text-nowrap">
             Lead Qualification
           </Heading>

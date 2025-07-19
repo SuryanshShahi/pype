@@ -40,10 +40,10 @@ const InteractionForm = () => {
           />
           <div>
             <Heading type="medium" className="text-[24px]">
-              John Doe
+              Demo Ai Agent
             </Heading>
             <Text type="light" variant="tertiary" size="xl">
-              Sales Head · HDFC
+              Try Pype AI Voice Assistant
             </Text>
           </div>
         </div>
@@ -70,7 +70,8 @@ const InteractionForm = () => {
               className="cursor-pointer h-4 w-4"
             />
             <Text type="light" className="text-gray-500">
-              You agree to our friendly privacy policy.
+              You agree to our friendly{" "}
+              <span className="underline">privacy policy</span>.
             </Text>
           </div>
         </div>

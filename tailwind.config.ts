@@ -29,8 +29,8 @@ const config: Config = {
         },
       },
       animation: {
-        slide: "slide 0.3s ease-out",
-        slideLeft: "slideLeft 0.3s ease-out",
+        slide: "slide 0.5s ease-out",
+        slideLeft: "slideLeft 0.5s ease-out",
         bottom: "bottom 0.5s",
       },
       colors: { ...colors, "twilight-blue": "#5F5F86" },

@@ -91,7 +91,7 @@ const AccordionItem = ({
       </div>
 
       {isActive && (
-        <div>
+        <div className="overflow-hidden">
           {isRichText ? (
             <p
               className="animate-slideLeft rce-text"

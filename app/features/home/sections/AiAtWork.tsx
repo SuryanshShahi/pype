@@ -67,7 +67,7 @@ const AiAtWork = () => {
             >
               Healthcare
             </Heading>
-            <Text size="xl" variant="deep-violet" className="max-w-[350px]">
+            <Text size="xl" variant="deep-violet" className="max-w-[320px]">
               Patient support and appointment scheduling.
             </Text>
           </div>

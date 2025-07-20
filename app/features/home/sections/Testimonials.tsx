@@ -11,16 +11,18 @@ import { IoIosTrendingUp } from "react-icons/io";
 
 const Testimonials = () => {
   return (
-    <div className="mx-5">
+    <div className="mx-5 space-y-10">
       <ContentHeader
-        title="Trusted by industry leaders"
+        title="Trusted by"
+        description="Industry leaders"
         sectionTitle="Testimonials"
+        styleDescription="md:!text-[56px] !text-[40px] md:!leading-[67px] !leading-[50px] !text-center !text-deep-violet !font-medium !-mt-6"
       />
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
         {[
           {
             className: "bg-header-gradient",
-            image: "/images/testimonials/testimonial1.png",
+            image: "/images/avatar1.png",
             name: "Jane Doe",
             designation: "Sales Head · HDFC",
             rating: 5,
@@ -31,7 +33,7 @@ const Testimonials = () => {
           },
           {
             className: "bg-orange-gradient",
-            image: "/images/testimonials/testimonial1.png",
+            image: "/images/avatar1.png",
             name: "Jane Doe",
             designation: "Sales Head · HDFC",
             rating: 3,
@@ -54,7 +56,7 @@ const Testimonials = () => {
                 <div className="flex items-center gap-x-4">
                   <div className="flex justify-center items-center h-[61px] w-[61px] border border-gray-200 rounded-full">
                     <Img
-                      src="/images/testimonials/testimonial1.png"
+                      src={item.image}
                       alt="testimonial"
                       isLocal
                       height={45}
@@ -94,7 +96,8 @@ const Testimonials = () => {
               <Divider />
               <div className="flex items-center justify-between gap-x-2">
                 <Heading className="text-[56px] leading-8">
-                  {item.growth}x
+                  {item.growth}
+                  <span className="text-[40px]">x</span>
                 </Heading>
                 <Heading type="light">
                   <IoIosTrendingUp size={42} className="ml-auto" />

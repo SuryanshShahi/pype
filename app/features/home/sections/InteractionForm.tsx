@@ -31,12 +31,12 @@ const InteractionForm = () => {
       <div className="md:p-8 p-6 md:m-10 m-6 space-y-8 md:rounded-t-[60px] rounded-t-[32px] bg-white">
         <div className="flex items-center gap-x-4">
           <Img
-            src="/images/reliable4.png"
+            src="/images/avatar.png"
             alt="interactionForm"
             isLocal
             height={58}
             width={58}
-            className="h-[58px] w-[58px] rounded-full"
+            className="h-[58px] w-[58px]"
           />
           <div>
             <Heading type="medium" className="text-[24px]">

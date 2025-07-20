@@ -12,7 +12,7 @@ const Faqs = () => {
           title="Frequently Asked Question"
           sectionTitle="Quick Answers"
           className="md:!items-start"
-          styleTitle="md:!text-start"
+          styleTitle="md:!text-start !text-[48px] !leading-[56px]"
         />
         <div className="space-y-10">
           <Text

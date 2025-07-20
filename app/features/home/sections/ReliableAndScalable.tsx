@@ -36,10 +36,10 @@ const ReliableAndScalable = () => {
           <Divider />
           <CardWrapper className="!rounded-[32px] md:!p-8 !p-6 space-y-14">
             <div className="border-2 border-dashed border-twilight-blue/20 rounded-[32px]">
-              <div className="space-y-4 -rotate-[8deg] bg-white shadow-card rounded-[32px] p-6 -mt-5 sm:w-[90%] w-[98%]">
+              <div className="space-y-4 -rotate-[8deg] bg-white shadow-card rounded-[32px] p-6 -mt-5">
                 <div className="flex items-center justify-between gap-x-4">
-                  <div className="flex items-center gap-x-4">
-                    <div className="h-14 w-14 rounded-full bg-brand-500">
+                  <div className="flex itemscenter gap-x-4">
+                    <div className="h-14 min-w-14 rounded-full bg-brand-500">
                       <Img
                         src="/images/circleBlack.png"
                         alt="reliable1"
@@ -50,13 +50,13 @@ const ReliableAndScalable = () => {
                       />
                     </div>
                     <div>
-                      <Heading type="medium" className="text-[24px]">
+                      <Heading type="medium" className="text-[24px] sm:text-nowrap">
                         Squareyards Leads
                       </Heading>
                       <Text type="light">Trigger: Lead registration</Text>
                     </div>
                   </div>
-                  <div className="flex items-center justify-center border border-dashed rounded-full w-14 h-14 rotate-[5deg]">
+                  <div className="flex items-center justify-center border border-dashed rounded-full min-w-14 h-14 rotate-[5deg]">
                     <SvgSaved />
                   </div>
                 </div>

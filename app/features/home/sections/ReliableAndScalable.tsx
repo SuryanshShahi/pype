@@ -36,7 +36,7 @@ const ReliableAndScalable = () => {
           <Divider />
           <CardWrapper className="!rounded-[32px] md:!p-8 !p-6 space-y-14">
             <div className="border-2 border-dashed border-twilight-blue/20 rounded-[32px]">
-              <div className="space-y-4 -rotate-[8deg] bg-white shadow-card rounded-[32px] p-6 -mt-5 w-[90%]">
+              <div className="space-y-4 -rotate-[8deg] bg-white shadow-card rounded-[32px] p-6 -mt-5 sm:w-[90%] w-[98%]">
                 <div className="flex items-center justify-between gap-x-4">
                   <div className="flex items-center gap-x-4">
                     <div className="h-14 w-14 rounded-full bg-brand-500">

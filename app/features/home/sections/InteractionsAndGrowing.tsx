@@ -2,7 +2,7 @@ import Divider from "@/app/shared";
 import Heading from "@/app/shared/heading";
 import ContentHeader from "@/app/shared/heading/ContentHeader";
 import Text from "@/app/shared/Text";
-import { SvgChat, SvgClock, SvgGuests, SvgUpTime } from "@/app/svgs";
+import { SvgChat, SvgClock, SvgGuests, SvgUpTime, SvgWave } from "@/app/svgs";
 import { forwardRef } from "react";
 import CountUp from "react-countup";
 
@@ -11,20 +11,22 @@ const InteractionsAndGrowing = forwardRef<HTMLDivElement, { visible: boolean }>(
     return (
       <div
         ref={ref}
-        className="bg-btn-primary md:rounded-[60px] rounded-[32px] md:p-16 p-10 space-y-6 mx-5"
+        className="bg-btn-primary md:rounded-[60px] rounded-[32px] md:p-16 p-10 space-y-6 mx-5 !relative"
       >
+        <SvgWave
+          className="absolute top-5 -right-[14%] animate-pulse rotate-6"
+          height={190}
+        />
         <div className="">
           <ContentHeader
             title="Numbers Behind the Voices:"
             sectionTitle="Pype AI By the Numbers"
-            description="Powering 1 million+ interactions and growing."
             className="md:!items-start"
-            styleTitle="md:!text-start !text-white leading-12"
-            styleDescription="md:hidden !text-[40px] !text-white leading-[50px]"
+            styleTitle="md:!text-start !text-white !text-[40px] leading-[48px]"
           />
           <Text
             type="light"
-            className="!text-white md:text-[40px] text-[32px] md:leading-[50px] md:block hidden"
+            className="!text-white md:text-[40px] text-[32px] md:leading-[50px] sm:text-start text-center"
           >
             Powering 1 million+ interactions and growing.
           </Text>

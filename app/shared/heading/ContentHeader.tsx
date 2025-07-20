@@ -24,13 +24,22 @@ const ContentHeader = ({
       <Chip>{sectionTitle}</Chip>
       <Heading
         type="medium"
-        className={clsx("md:text-[56px] text-[40px] md:leading-[67px] leading-[50px] text-center", styleTitle)}
+        className={clsx(
+          "md:text-[56px] text-[40px] md:leading-[67px] leading-[50px] text-center",
+          styleTitle
+        )}
       >
         {title}
       </Heading>
-      <Text size="lg" type="light" className={clsx("max-w-[800px] text-center", styleDescription)}>
-        {description}
-      </Text>
+      {description && (
+        <Text
+          size="lg"
+          type="light"
+          className={clsx("max-w-[800px] text-center", styleDescription)}
+        >
+          {description}
+        </Text>
+      )}
     </div>
   );
 };

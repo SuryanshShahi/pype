@@ -10,8 +10,8 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 const HeroSection = () => {
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 gap-10 px-5 items-center">
-      <div className="space-y-6">
+    <div className="flex flex-col lg:flex-row gap-10 px-5 items-center">
+      <div className="space-y-6 max-w-[650px]">
         <div className="flex items-center gap-x-3">
           <div className="bg-white h-10 min-w-10 rounded-full flex items-center justify-center">
             <BsStars size={20} className="text-brand-tertiary" />
@@ -28,7 +28,12 @@ const HeroSection = () => {
         >
           Next-Gen Voice AI Redefining Customer Communication
         </Heading>
-        <Text size="lg" variant="deep-violet" type="light" className="max-w-[500px]">
+        <Text
+          size="lg"
+          variant="deep-violet"
+          type="light"
+          className="max-w-[500px]"
+        >
           Enterprise-grade AI voice agents that automate calls, streamline
           operations, and elevate customer experiences. Delivering exceptional
           service 24/7.

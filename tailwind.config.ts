@@ -135,6 +135,8 @@ const config: Config = {
           "linear-gradient(180deg, #E7EDFF 0%, rgba(250, 250, 255, 0.00) 102.76%)",
         "orange-gradient":
           "linear-gradient(136deg, #FFF 4.19%, rgba(255, 137, 137, 0.50) 95.64%)",
+        "ai-action":
+          "linear-gradient(131deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.00) 42.99%)",
       },
       boxShadow: {
         xs: "0px 1px 2px 0px #1018280D",

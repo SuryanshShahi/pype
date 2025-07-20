@@ -59,7 +59,7 @@ const InteractionsAndGrowing = forwardRef<HTMLDivElement, { visible: boolean }>(
               count: 99.9,
             },
           ].map((item, idx) => (
-            <div key={idx} className="space-y-8">
+            <div key={idx} className="space-y-4">
               {item.icon}
               <div className="space-y-4">
                 <Heading

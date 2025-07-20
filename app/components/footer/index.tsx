@@ -7,6 +7,7 @@ import Text from "@/app/shared/Text";
 import Link from "next/link";
 import router from "next/router";
 import { Fragment } from "react";
+import { MdOutlineMail } from "react-icons/md";
 
 const Footer = () => {
   const routes = {
@@ -66,9 +67,13 @@ const Footer = () => {
             </Text>
             <div className="space-y-4">
               <div className="relative lg:w-[70%] sm:w-full w-[90%] md:mx-0 mx-auto shadow-card rounded-full">
+                <MdOutlineMail
+                  size={20}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 text-secondary"
+                />
                 <input
                   placeholder="Enter your email"
-                  className="bg-white rounded-full px-6 py-4 w-full outline-none pr-32"
+                  className="bg-white rounded-full pl-11 py-4 w-full outline-none pr-32"
                 />
                 <Button
                   btnName="Subscribe"

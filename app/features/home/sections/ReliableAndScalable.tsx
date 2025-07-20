@@ -50,7 +50,10 @@ const ReliableAndScalable = () => {
                       />
                     </div>
                     <div>
-                      <Heading type="medium" className="text-[24px] sm:text-nowrap">
+                      <Heading
+                        type="medium"
+                        className="text-[24px] sm:text-nowrap"
+                      >
                         Squareyards Leads
                       </Heading>
                       <Text type="light">Trigger: Lead registration</Text>
@@ -110,7 +113,7 @@ const ReliableAndScalable = () => {
                   {/* {item.icon} */}
                   <Text type="light" size="sm" variant="deep-violet">
                     {item.label}
-                    <span className="text-deep-violet font-semibold">
+                    <span className="text-deep-violet font-medium">
                       {item.value}
                     </span>
                   </Text>
@@ -157,7 +160,7 @@ const ReliableAndScalable = () => {
                       <Text type="light" size="sm">
                         {item.label}
                       </Text>
-                      <Text type="semibold" size="sm" variant="deep-violet">
+                      <Text type="medium" size="sm" variant="deep-violet">
                         {item.value}
                       </Text>
                     </div>
@@ -312,7 +315,10 @@ const ReliableAndScalable = () => {
                       </Text>
                     </div>
                     <div className={"space-y-3"}>
-                      <Heading className={clsx(idx === 1 && "!text-white/80")}>
+                      <Heading
+                        type="medium"
+                        className={clsx(idx === 1 && "!text-white/80")}
+                      >
                         {item.title}
                       </Heading>
                       {item?.description && (

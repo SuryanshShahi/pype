@@ -125,7 +125,7 @@ const Challenges = () => {
                 type="medium"
                 className="rounded-2xl text-center px-6 py-4 bg-gray-50 border border-gray-100"
               >
-                <span className="text-brand-tertiary font-semibold">
+                <span className="text-brand-tertiary font-medium">
                   {item.value}
                 </span>{" "}
                 {item.imageTitle}
@@ -133,13 +133,13 @@ const Challenges = () => {
             </CardWrapper>
           </div>
           <div className={clsx("space-y-6", idx % 2 !== 0 && "md:order-first")}>
-            <Text size="xl" type="medium">
+            <Text size="xl" type="medium" className="leading-[20px]">
               0{idx + 1}
             </Text>
             <div className="space-y-3">
               <Heading
                 type="medium"
-                className="text-[40px] max-w-[360px] leading-12"
+                className="text-[40px] max-w-[360px] !leading-[48px]"
               >
                 {item.title}
               </Heading>

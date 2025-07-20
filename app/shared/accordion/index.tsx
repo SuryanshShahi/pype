@@ -81,12 +81,20 @@ const AccordionItem = ({
         onKeyDown={() => {}}
       >
         <Heading className={clsx("text-xl", styleTitle)}>{title}</Heading>
-        <div className="bg-white rounded-full h-[42px] w-[42px] flex items-center justify-center">
-          {isActive ? (
-            <FiMinus size={24} className="text-primary duration-300" />
-          ) : (
-            <FiPlus size={24} className="text-primary duration-300" />
+        <div
+          className={clsx(
+            "rounded-full h-[42px] w-[42px] flex items-center justify-center border",
+            isActive
+              ? "bg-deep-violet border-deep-violet text-white"
+              : "bg-white border-gray-100 text-deep-violet"
           )}
+        >
+          <FiMinus
+            className={clsx("duration-300", isActive ? "h-6 w-6" : "h-0 w-0")}
+          />
+          <FiPlus
+            className={clsx("duration-300", !isActive ? "h-6 w-6" : "h-0 w-0")}
+          />
         </div>
       </div>
 
@@ -94,11 +102,11 @@ const AccordionItem = ({
         <div className="overflow-hidden">
           {isRichText ? (
             <p
-              className="animate-slideLeft rce-text"
+              className="animate-bottom rce-text"
               dangerouslySetInnerHTML={{ __html: body as string }}
             />
           ) : typeof body === "string" ? (
-            <Text variant="secondary" className="animate-slideLeft">
+            <Text variant="secondary" className="animate-bottom">
               {body}
             </Text>
           ) : (

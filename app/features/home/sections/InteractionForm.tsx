@@ -7,7 +7,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 const InteractionForm = () => {
   return (
-    <div className="bg-btn-primary rounded-[60px] space-y-6 grid lg:grid-cols-2 grid-cols-1 md:pt-8 pt-6 mx-5">
+    <div className="bg-btn-primary rounded-[60px] space-y-6 grid lg:grid-cols-2 grid-cols-1 md:pt-8 pt-6 mx-5 items-center">
       <div className="space-y-6 md:p-8 p-6">
         <Heading
           variant="white"

@@ -13,7 +13,7 @@ const Heading = ({
   children,
   className,
   as: Component = "h1",
-  type = "semibold",
+  type = "medium",
   variant = "deep-violet",
   ...props
 }: HeadingProps) => {

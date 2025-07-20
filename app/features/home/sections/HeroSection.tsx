@@ -28,12 +28,7 @@ const HeroSection = () => {
         >
           Next-Gen Voice AI Redefining Customer Communication
         </Heading>
-        <Text
-          size="lg"
-          variant="deep-violet"
-          type="light"
-          className="max-w-[500px]"
-        >
+        <Text size="lg" type="light" className="max-w-[500px]">
           Enterprise-grade AI voice agents that automate calls, streamline
           operations, and elevate customer experiences. Delivering exceptional
           service 24/7.

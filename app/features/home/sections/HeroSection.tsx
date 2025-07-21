@@ -80,7 +80,7 @@ const HeroSection = () => {
           </Text>
         </div>
       </div>
-      <div className="flex items-center justify-center gap-x-4 relative max-w-[600px] w-full mx-auto mt-6">
+      <div className="flex items-center  justify-center gap-x-4 relative max-w-[600px] w-full mx-auto mt-6">
         <SvgWave className="absolute top-[20%] -right-16 -right[20%] animate-pulse" />
         <div className="relative h-[650px] w-[320px] z-10 rounded-[60px] overflow-hidden">
           <video

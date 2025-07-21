@@ -84,7 +84,7 @@ const HeroSection = () => {
         <SvgWave className="absolute top-[20%] -right-16 -right[20%] animate-pulse" />
         <div className="relative h-[650px] w-[320px] z-10 rounded-[60px] overflow-hidden">
           <video
-            src="/images/heroSection/heroVideo.mp4"
+            src="/images/heroVideo.MP4"
             autoPlay
             loop
             muted

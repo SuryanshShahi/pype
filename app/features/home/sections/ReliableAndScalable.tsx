@@ -10,7 +10,7 @@ import clsx from "clsx";
 
 const ReliableAndScalable = () => {
   return (
-    <div className="space-y-6 mx-5 relative">
+    <div className="space-y-6 mx-5 relative !mt-[400px]">
       <ContentHeader
         title="AI agents you can trust."
         description="Deploy with confidence."
@@ -35,8 +35,16 @@ const ReliableAndScalable = () => {
           </div>
           <Divider />
           <CardWrapper className="!rounded-[32px] md:!p-8 !p-6 space-y-14">
-            <div className="border-2 border-dashed border-twilight-blue/20 rounded-[32px]">
-              <div className="space-y-4 -rotate-[8deg] bg-white shadow-card rounded-[32px] p-6 -mt-5">
+            <div className="border-2 border-dashed border-twilight-blue/20 rounded-[32px] relative max-h-[155px]">
+              <Img
+                src="/images/reliable1.png"
+                alt="reliable1"
+                width={600}
+                height={400}
+                isLocal
+                className="w-full object-cover z-50 -mt-6 md:-ml-3"
+              />
+              {/* <div className="space-y-4 -rotate-[8deg] bg-white shadow-card rounded-[32px] p-6 -mt-5">
                 <div className="flex items-center justify-between gap-x-4">
                   <div className="flex itemscenter gap-x-4">
                     <div className="h-14 min-w-14 rounded-full bg-brand-500">
@@ -82,14 +90,14 @@ const ReliableAndScalable = () => {
                     size="sm"
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
             <Text type="light">
               Reach customers automatically when they fill a form, miss a call,
               or complete a key action. Schedule follow-ups, reminders, and
               campaigns—without lifting a finger.
             </Text>
-            <div className="flex items-center justify-between !mt-8">
+            <div className="flex flex-wrap items-center md:justify-between justify-center gap-4 !mt-8">
               {[
                 {
                   label: "Active Sequences: ",

@@ -82,7 +82,17 @@ const HeroSection = () => {
       </div>
       <div className="flex items-center justify-center gap-x-4 relative max-w-[600px] w-full mx-auto mt-6">
         <SvgWave className="absolute top-[20%] -right-16 -right[20%] animate-pulse" />
-        <div className="relative h-[650px] w-[350px] z-10">
+        <div className="relative h-[650px] w-[320px] z-10 rounded-[60px] overflow-hidden">
+          <video
+            src="/images/heroSection/heroVideo.mp4"
+            autoPlay
+            loop
+            muted
+            className="absolute inset-0 left-[14px] w-[290px] h-full object-contain z-10 rounded-[60px]"
+          />
+          <div className="absolute inset-0 bg-no-repeat bg-[url('/images/heroSection/phoneFrame.png')] bg-contain bg-center h-full w-[320px] z-20 pointer-events-none" />
+        </div>
+        {/* <div className="relative h-[650px] w-[350px] z-10">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((index) => (
             <Img
               key={index}
@@ -100,7 +110,7 @@ const HeroSection = () => {
               }`}
             />
           ))}
-        </div>
+        </div> */}
         <CardWrapper className="!py-3 absolute left-[5%] top-[15%] shadow-card sm:block hidden z-[11] animate-slide">
           <Heading variant="twilight-blue">Engagement</Heading>
           <Text

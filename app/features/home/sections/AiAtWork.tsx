@@ -10,6 +10,7 @@ import clsx from "clsx";
 import { useEffect, useState } from "react";
 import { FaPause, FaPlay } from "react-icons/fa";
 import { LuPhoneCall } from "react-icons/lu";
+import { RxCross2 } from "react-icons/rx";
 import { VscCallIncoming } from "react-icons/vsc";
 const RenderBtn = ({
   type = "play",
@@ -213,9 +214,15 @@ const AiAtWork = () => {
       <Modal
         isOpen={isOpen}
         close={() => setIsOpen(false)}
-        className="p-5"
+        className="p-5 relative"
         size="md"
       >
+        <RxCross2
+          className="absolute top-4 right-4 text-black cursor-pointer"
+          size={24}
+          onClick={() => setIsOpen(false)}
+        />
+
         <div className="flex flex-col justify-center items-center gap-4">
           <div className="gap-y-4 flex flex-col items-center">
             <div className="flex items-center gap-x-2">
